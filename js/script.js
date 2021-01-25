@@ -40,7 +40,7 @@ function displayDateandTime()
   } 
 
   var elements = document.getElementsByClassName("clock");
-  elements[0].innerHTML=`${daylist[day]} ${hour}:${minute} ${prepand}  ${date + monthlist[month]}`;
+  elements[0].innerHTML=`${daylist[day]}  ${date + monthlist[month]} ${hour}:${minute} ${prepand} `;
 
   //console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 }
