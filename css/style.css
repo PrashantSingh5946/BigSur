@@ -41,6 +41,7 @@ body
     font-family: 'Yusei Magic', sans-serif;
     font-size: 13px;
     color: #fff;
+    display: inline;
 }
 .navbar .left-part td
 {
@@ -53,6 +54,32 @@ body
 .navbar .left-part img
 {
     height:15px;
+}
+
+.navbar .right-part img
+{
+    height:25px;
+}
+
+.navbar .left-part
+{
+    float: left;
+}
+
+.navbar .right-part
+{
+    float: right;
+    display: inline;
+    font-size: 15px;
+    font-family: 'Yusei Magic', sans-serif;
+    
+}
+
+.navbar .right-part td
+{
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .dock
 {
@@ -78,6 +105,7 @@ body
     height: 80px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .icon
