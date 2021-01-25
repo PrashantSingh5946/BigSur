@@ -6,8 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://use.fontawesome.com/378bece562.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="/js/script.js"></script>
+<link href="https://fonts.googleapiss.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -20,9 +21,9 @@
                     <table>
                         <tr>
                             <td>
-                                <img src="/assets/navigation/apple.png" alt="">
+                                <i class="fab fa-apple"></i>
                             </td>
-                            <td style="font-size: 17px;"> 
+                            <td style="font-size: 17px;">
                                 Finder
                             </td>
                             <td>
@@ -53,7 +54,6 @@
                             <td>
                                 <i class="fa fa-battery-full" aria-hidden="true"></i>
                             </td>
-                           
                             <td>
                                 <i class="fa fa-wifi" aria-hidden="true"></i>
                             </td>
@@ -61,24 +61,93 @@
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </td>
                             <td>
-                                <img src="/assets/Icons/Control Center.png" alt="">
+                                <img src="/assets/Icons/Control Center.png" onClick="OS.navigationBar.toggleControlPanel()" alt="">
                             </td>
                             <td>
-                                
+
                             </td >
                             <td class="clock">
-                                
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
-            
-            
-            <div class="control-panel">
+            <div class="control-panel" id="control-panel">
                 <div class="top-row">
-                    <div class="square"></div>
-                    <div class="square"></div>
+                    <div class="square">
+                        <div class="icon-row">
+                            <div class="icon">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    Wi-Fi
+                                </div>
+                                <div class="description">
+                                    Nexus
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-row">
+                            <div class="icon">
+                                <i class="fab fa-bluetooth-b"></i>
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    Bluetooth
+                                </div>
+                                <div class="description">
+                                    On
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-row">
+                            <div class="icon">
+                                <img src="/assets/navigation/airdrop.png" alt="" >
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    AirDrop
+                                </div>
+                                <div class="description">
+                                    On
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    
+                    <div class="oneColumn">
+                        <div class="icon-row">
+                            <div class="icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    Do Not
+                                </div>
+                                <div class="heading">
+                                    Disturb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="oneColumn">
+                        <div class="icon-row">
+                            <div class="icon">
+                                <i class="far fa-clone"></i>
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    Screen
+                                </div>
+                                <div class="heading">
+                                    Mirroring
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <div class="setting-slider">
 
@@ -87,7 +156,6 @@
 
                 </div>
                 <div class="music-bar">
-                    
                 </div>
 
             </div>
@@ -164,6 +232,6 @@
 
 
     </main>
-    <script src="/js/script.js"></script>
+
 </body>
 </html>
