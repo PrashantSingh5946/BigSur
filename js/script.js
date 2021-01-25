@@ -1,3 +1,53 @@
+//The OS  Object
+
+var OS =
+{
+    "navigationBar" :
+    {
+      //vars
+      "areAnyMenuItemsVisible" : false,
+      "isVisibleControlPanel" :  false,
+
+      //methods
+      toggleControlPanel()
+      {
+        console.log("Hiding");
+        var element = document.getElementById("control-panel");
+        if(this.isVisibleControlPanel==true)
+        {console.log("Working1");
+          element.style.display="none";
+          this.isVisibleControlPanel=false;
+          this.areAnyMenuItemsVisible=true;
+        }
+        else
+        { console.log("Displaying");
+          console.log(element.style.display+"");
+          element.style.display="block";
+          this.isVisibleControlPanel=true;
+          this.hideAllApps();
+        }
+      },
+      hideAllApps()
+      {
+        this.areAnyMenuItemsVisible=false;
+      }
+
+    },
+
+    "Apps" :
+    {
+
+    },
+
+    "Dock":
+    {
+
+    }
+
+}
+
+
+
 //time and date
 function displayDateandTime()
 { 
