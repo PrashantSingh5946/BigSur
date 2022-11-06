@@ -59,7 +59,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(addResourcesToCache(["/", "/index.html", "/assets/"]));
+  event.waitUntil(addResourcesToCache(["/", "/index.html"]));
 });
 
 self.addEventListener("fetch", (event) => {
